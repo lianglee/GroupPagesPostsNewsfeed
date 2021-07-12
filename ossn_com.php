@@ -16,7 +16,7 @@ function group_posts_newsfeed_init(){
 }
 function group_posts_show_group_name($hook, $type, $return, $param){
 		$context = ossn_get_context();
-		if($return['post']->type = 'group' && isset($context) && $context == 'home'){
+		if($return['post']->type == 'group' && isset($context) && $context == 'home'){
 				$return['show_group'] = true;
 		}
 		return $return;
