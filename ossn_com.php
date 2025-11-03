@@ -28,7 +28,10 @@ function groups_pages_posts_show_on_newsfeed($hook, $type, $return, $params){
 				'businesspage',
 		);
 		$groups = new OssnGroup();
-		$list   = $groups->getMyGroups(ossn_loggedin_user());
+		$list   = $groups->getMyGroups(ossn_loggedin_user(), array(
+						'page_limit' => false,
+						'offset' => false,
+		));
 		if($list){
 				$results = array();
 				foreach ($list as $group){

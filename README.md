@@ -1,2 +1,2 @@
-# GroupPostsNewsfeed
-GroupPostsNewsfeed
+# GroupPagesPostsNewsfeed
+GroupPagesPostsNewsfeed
